@@ -11,20 +11,20 @@ Você pode gerenciar moedas e tipos de mineração de forma simples e eficiente,
 * Criar novos registros utilizando os botões disponíveis no final das tabelas.
 
 ## Tecnologias Utilizadas
-* Ruby on Rails: Framework principal para desenvolvimento da aplicação.
-* SQLite: Banco de dados utilizado para armazenar as informações.
-* Bootstrap: Para estilização e responsividade.
-* SCSS e HTML: Para personalização e estrutura do layout.
+* Ruby on Rails
+* SQLite
+* Bootstrap
+* SCSS e HTML
 
 ## Objetivo do Projeto
 Este projeto foi desenvolvido como parte de um curso de Ruby on Rails na Udemy. Ele tem como objetivo ensinar a criar uma aplicação Rails completa, desde a configuração inicial até a integração com um banco de dados.
 
-![Capa](./assets/images/home-br.png)
-![coin](./assets/images/coin-br.png)
-![new](./assets/images/newcoin-br.png)
-![show](./assets/images/showcoin-br.png)
-![edit](./assets/images/editcoin-br.png)
-![mining](./assets/images/mining-br.png)
-![miningnew](./assets/images/newmining-br.png)
+![Capa](./app/assets/images/home-br.png)
+![coin](./app/assets/images/coin-br.png)
+![new](./app/assets/images/newcoin-br.png)
+![show](./app/assets/images/showcoin-br.png)
+![edit](./app/assets/images/editcoin-br.png)
+![mining](./app/assets/images/mining-br.png)
+![miningnew](./app/assets/images/newmining-br.png)
 
 
