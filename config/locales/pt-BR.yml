@@ -1,7 +1,7 @@
 pt-BR:
   current_locale: Portguês do Brasil
   messages:
-    text_main: Este é o Crypto Wallet, um app para você cadastrar e acompanhar as suas criptomoedas.
+    text_main: Este é o Crypto Wallet, uma aplicação para você cadastrar e acompanhar as suas criptomoedas.
     text_button: "Para começar, selecione uma das opções abaixo:"
     confirm: Você tem certeza?
   hello: Olá Mundo!
