@@ -1,0 +1,28 @@
+.card-main {
+    background: linear-gradient(180deg, rgba(163, 159, 167, 0.86) 0%, rgba(147, 142, 151, 0.86) 35%, rgba(174, 170, 178, 0.86) 100%);
+    font-family: "Maven Pro", serif;
+    color: rgb(0, 0, 0);
+    
+    .text-main {
+        font-size: 22px;
+        padding-bottom: 15px;
+        border-bottom: solid 2px rgb(73, 80, 87);
+        margin: 15px 0;
+    }
+
+    .text-button {
+        font-size: 18px;
+        margin: 15px 0
+    }
+
+    .btn-crypto {
+        background-color: transparent;
+        border: solid 2px rgb(73, 80, 87);
+        border-radius: 3px;
+
+        &:hover {
+            background-color: rgb(73, 80, 87);
+        }
+    }
+}
+

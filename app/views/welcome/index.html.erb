@@ -1,0 +1,9 @@
+<div class="card-main p-5 mb-2 mt-5 rounded-3">
+   <div class="container py-4">
+      <h1 class="display-5 title-main">Crypto Wallet</h1>
+      <p class="text-main"><%= t('messages.text_main')%></p>
+      <p class="text-button"><%= t('messages.text_button')%></p>
+      <%= link_to "#{Coin.model_name.human}", coins_path, class:"btn btn-crypto btn-lg me-2", role: "button" %>
+      <%= link_to "#{MiningType.model_name.human}", mining_types_path, class:"btn btn-crypto btn-lg", role: "button" %>
+   </div>
+</div>

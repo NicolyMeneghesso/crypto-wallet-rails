@@ -1,0 +1,18 @@
+<form>
+  <div id="<%= dom_id coin %>">
+    <div class="form-group">
+      <%= label_tag Coin.human_attribute_name(:description) %>
+      <%= text_field_tag nil, coin.description, class: "form-control", id: "formGroupExampleInput", disabled: true %>
+    </div>
+    
+    <div class="form-group">
+      <%= label_tag Coin.human_attribute_name(:acronym) %>
+      <%= text_field_tag nil, coin.acronym, class: "form-control", id: "formGroupExampleInput", disabled: true %>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag Coin.human_attribute_name(:url_image) %>
+      <%= text_field_tag nil, coin.url_image, class: "form-control", id: "formGroupExampleInput", size: "28x28", disabled: true %>
+    </div>
+  </div>
+</form>

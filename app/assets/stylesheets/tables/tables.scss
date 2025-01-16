@@ -1,0 +1,35 @@
+.card-main-table {
+    background: rgba(98, 97, 99, 0.46);
+    font-family: "Maven Pro", serif;
+    color: rgb(228, 225, 225);
+    width: 80%;
+
+    .btn-new-crypto {
+        background-color: transparent;
+        border: solid 2px rgb(211, 205, 205);
+        border-radius: 3px;
+        color: rgb(211, 205, 205) !important;
+        font-weight: 500;
+        font-size: 18px;
+        width: 25%;
+        padding: 8px;
+
+        &:hover {
+            background-color: rgb(131, 131, 132);
+            color: rgb(211, 205, 205) !important;
+        }
+    }
+
+    th, td {
+        color: rgb(228, 225, 225) !important; 
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(199, 192, 192);
+
+        &:hover {
+            color: rgb(250, 243, 243);
+        }
+    }
+}

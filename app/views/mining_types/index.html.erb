@@ -1,0 +1,31 @@
+<p style="color: green"><%= notice %></p>
+
+<div class= "card-main-table p-4 mt-5 rounded-3">
+   <h1 class="pb-2"><%= MiningType.model_name.human(count: @mining_types.count)%></h1>
+
+   <table class="table table-striped table-dark">
+      <thead>
+         <tr>
+            <th scope="col"><%= @mining_types.human_attribute_name(:description) %></th>
+            <th scope="col"><%= @mining_types.human_attribute_name(:acronym) %></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+         </tr>
+      </thead>
+      <tbody>
+         <div id="mining_types">
+            <% @mining_types.each do |mining_type| %>
+               <tr scope="row">
+                  <td><%= mining_type.description %></td>
+                  <td><%= mining_type.acronym %></td>
+                  <td><%= link_to t('links.show'), mining_type %></td>
+                  <td><%= link_to t('links.edit'), edit_mining_type_path(mining_type) %></td>
+                  <td><%= link_to t('links.delete'), mining_type, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+               </tr>
+            <% end %>
+         </div>
+      </tbody>
+   </table>
+   <%= link_to t('new.mining_type'), new_mining_type_path, class:"btn btn-new-crypto" %>
+</div>

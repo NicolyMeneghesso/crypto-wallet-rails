@@ -1,0 +1,46 @@
+.card-form-table {
+    background: rgba(98, 97, 99, 0.46);
+    font-family: "Maven Pro", serif;
+    color: rgb(228, 225, 225);
+    width: 30%;
+    padding: 25px 40px;
+
+    form {
+        width: 100%;
+
+        .form-label {
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+
+        .form-control, .form-select {
+            margin-bottom: 10px;
+            background-color: rgb(216, 220, 220);
+        }
+    }
+    
+    .btn-form {
+        background-color: transparent;
+        border: solid 2px rgb(211, 205, 205);
+        border-radius: 3px;
+        color: rgb(211, 205, 205) !important;
+        font-weight: 500;
+        padding: 10px;
+        margin-top: 15px;
+        width: 250px;
+
+        &:hover {
+            background-color: rgb(188, 188, 193);
+            color: rgb(5, 5, 5) !important;
+        }
+    }
+
+    form.button_to {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form.button_to .btn-form {
+        margin: 0 auto; 
+    }
+}

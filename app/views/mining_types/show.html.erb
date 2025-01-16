@@ -1,0 +1,10 @@
+<div class= "card-form-table mt-5 rounded-3 d-flex flex-column align-items-center">
+  <p style="color: green"><%= notice %></p>
+
+  <%= render @mining_type %>
+
+  <%= link_to t('editing.mining_type'), edit_mining_type_path(@mining_type), class:"btn btn-form" %> 
+  <%= link_to t('links.back'), mining_types_path, class:"btn btn-form" %>
+
+  <%= button_to t('links.delete'), @mining_type, method: :delete, class:"btn btn-form" %>
+</div>

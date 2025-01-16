@@ -1,0 +1,33 @@
+<p style="color: green"><%= notice %></p>
+
+<div class= "card-main-table p-4 mt-5 rounded-3">
+   <h1 class="pb-2"><%= Coin.model_name.human(count: @coins.count)%></h1>
+
+   <table class="table table-striped table-dark">
+      <thead>
+         <tr>
+            <th scope="col"><%= @coins.human_attribute_name(:description) %></th>
+            <th scope="col"><%= @coins.human_attribute_name(:acronym) %></th>
+            <th scope="col"><%= @coins.human_attribute_name(:url_image) %></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+         </tr>
+      </thead>
+
+      <tbody>
+         <% @coins.each do |coin| %>
+            <tr scope="row">
+               <td><%= coin.description %></td>
+               <td><%= coin.acronym %></td>
+               <td><%= image_tag coin.url_image, size: "28x28" %></td>
+               <td><%= link_to t('links.show'), coin %></td>
+               <td><%= link_to t('links.edit'), edit_coin_path(coin) %></td>
+               <td><%= link_to t('links.delete'), coin, method: :delete, data: { confirm: t('msg.confirm') } %></td>
+            </tr>
+         <% end %>
+      </tbody>
+   </table>
+
+   <%= link_to t('new.coin'), new_coin_path, class:"btn btn-new-crypto" %>
+</div>

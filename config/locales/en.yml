@@ -1,0 +1,23 @@
+en:
+  current_locale: English (International)
+  hello: Hello world
+  messages:
+    text-main: This is  the Crypto Wallet, an app that you can register and keep up with your cryptocoins.
+    text-button: "To start, chooso an option below:"
+    confirm: Are you sure?
+  links:
+    edit: Edit
+    show: Show
+    delete: Delete
+    new: New
+    back: Back
+    select: Select...
+  new:
+    coin: New Coin
+    mining_type: New Mining Type
+  editing:
+    coin: Editing Coin
+    mining_type: Editing Mining Type
+  showing:
+    coin: Showing Moeda
+    mining_type: Showing Mining Type

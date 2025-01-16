@@ -1,0 +1,14 @@
+<form>
+  <div id="<%= dom_id mining_type %>">
+    <div class="form-group">
+      <%= label_tag MiningType.human_attribute_name(:description) %>
+      <%= text_field_tag nil, mining_type.description, class: "form-control", id: "formGroupExampleInput", disabled: true %>
+    </div>
+ 
+    <div class="form-group">
+      <%= label_tag MiningType.human_attribute_name(:acronym) %>
+      <%= text_field_tag nil, mining_type.acronym, class: "form-control", id: "formGroupExampleInput", disabled: true %>
+    </div>
+  </div>
+</form>
+
