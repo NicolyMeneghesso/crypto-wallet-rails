@@ -19,6 +19,8 @@ Você pode gerenciar moedas e tipos de mineração de forma simples e eficiente,
 ## Objetivo do Projeto
 Este projeto foi desenvolvido como parte de um curso de Ruby on Rails na Udemy. Ele tem como objetivo ensinar a criar uma aplicação Rails completa, desde a configuração inicial até a integração com um banco de dados.
 
+## Pré-visualização
+
 ![Capa](./app/assets/images/home-br.png)
 ![coin](./app/assets/images/coin-br.png)
 ![new](./app/assets/images/newcoin-br.png)
