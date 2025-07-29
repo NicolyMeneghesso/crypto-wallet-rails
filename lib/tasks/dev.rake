@@ -14,24 +14,26 @@ namespace :dev do
 
   desc "Cadastra as moedas"
   task add_coins: :environment do
+    Coin.delete_all
+    
     show_spinner("Cadastrando as Moedas...") do
       coins = [
         {  
           description: "Bitcoin",
           acronym: "BTC",
-          url_image: "https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=035",
+          url_image: "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
           mining_type: MiningType.find_by(acronym: 'PoW')
         },  
         {  
           description: "Ethereum",
           acronym: "ETC",
-          url_image: "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=035",
+          url_image: "https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
           mining_type: MiningType.all.sample
         },
         {  
           description: "Dash",
           acronym: "DASH",
-          url_image: "https://cryptologos.cc/logos/dash-dash-logo.png?v=040",
+          url_image: "https://coin-images.coingecko.com/coins/images/19/large/dash-logo.png?1696501423",
           mining_type: MiningType.all.sample
         },
         {  
@@ -43,7 +45,7 @@ namespace :dev do
         {  
           description: "ZCash",
           acronym: "ZEC",
-          url_image: "https://cryptologos.cc/logos/zcash-zec-logo.png?v=040",
+          url_image: "https://coin-images.coingecko.com/coins/images/486/large/circle-zcash-color.png?1696501740",
           mining_type: MiningType.all.sample  
         }
       ]
